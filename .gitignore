@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual Environment
+venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs (keep folder but ignore generated files if desired)
+logs/*.csv
+
+# Python packaging
+build/
+dist/
+*.egg-info/
