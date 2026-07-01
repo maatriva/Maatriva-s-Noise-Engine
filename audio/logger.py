@@ -52,10 +52,22 @@ class EventLogger:
                     "Average_Energy",
                     "Average_Spectral_Centroid",
 
+                    "Average_Frequency_Score",
+                    "Max_Disturbance_Score",
+
+                    "Persistence_Score",
+                    "Temporal_Score",
+
+                    "Pattern",
+
+                    "Final_Score",
+                    "Risk_Level",
+
                     "Baseline",
                     "Samples",
                     "Severity"
                 ])
+                   
 
     # =========================================
     # Frame Logger
@@ -86,7 +98,6 @@ class EventLogger:
             writer = csv.writer(f)
 
             writer.writerow([
-
                 event.start_time,
                 event.end_time,
                 event.elapsed_time,
@@ -100,8 +111,18 @@ class EventLogger:
                 event.average_energy,
                 event.average_spectral_centroid,
 
+                event.average_frequency_score,
+                event.max_disturbance_score,
+
+                event.persistence_score,
+                event.temporal_score,
+
+                event.pattern,
+
+                event.final_score,
+                event.risk_level,
+
                 event.baseline,
                 event.samples,
                 event.severity
-
             ])
